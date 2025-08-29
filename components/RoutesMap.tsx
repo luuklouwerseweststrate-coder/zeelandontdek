@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useRef } from "react";
 import type { RouteItem } from "@/components/types";
-import "maplibre-gl/dist/maplibre-gl.css";
 
 export default function RoutesMap({ routes, onSelect }: { routes: RouteItem[]; onSelect?: (r: RouteItem)=>void }) {
   const mapRef = useRef<HTMLDivElement|null>(null);
